@@ -12,4 +12,12 @@ def distance(x1, y1, x2, y2):
 
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	# your code goes here
-	return (distance(x1, y1, x2, y2)**2 + distance(x2, y2, x3, y3)**2 == distance(x3, y3, x1, y1)**2)
+	d1 = distance(x1, y1, x2, y2)
+	d2 = distance(x2, y2, x3, y3)
+	d3 = distance(x3, y3, x1, y1)
+	d = [d1, d2, d3]
+	d.sort()
+	if d1**2 + d2**2 == d3**2:
+		return True
+	else:
+		return False
