@@ -20,7 +20,7 @@ class Classy(object):
         self.items = []
         self.score = { "tophat": 2, "bowtie":4, "monocle":5 }
 
-    def addItem(item):
+    def addItem(self, item):
         self.items.append(item)
 
     def classiness(self):
