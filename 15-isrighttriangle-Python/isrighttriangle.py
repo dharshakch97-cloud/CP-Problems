@@ -16,8 +16,8 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	d2 = distance(x2, y2, x3, y3)
 	d3 = distance(x3, y3, x1, y1)
 	d = [d1, d2, d3]
-	d.sort()
-	if d1**2 + d2**2 == d3**2:
+	a, b, c = sorted(d)
+	if a**2 + b**2 == c**2:
 		return True
 	else:
 		return False
