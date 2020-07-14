@@ -23,7 +23,7 @@ class Classy(object):
     def addItem(item):
         self.items.append(item)
 
-    def classiness():
+    def classiness(self):
         points = 0
         for i in items:
             points += score[i]
