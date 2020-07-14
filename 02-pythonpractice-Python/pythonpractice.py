@@ -28,4 +28,6 @@ class Classy(object):
         for i in self.items:
             if i in self.score:
                 points += self.score[i]
+            else:
+                points += 0
         return points
