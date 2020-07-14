@@ -8,7 +8,7 @@
 import math
 
 def distance(x1, y1, x2, y2):
-	return math.sqrt((x1 - x2)**2 + (y1 - y2)**2)
+	return math.sqrt(((x2 - x1)**2) + ((y2 - y1)**2))
 
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	# your code goes here
@@ -16,9 +16,4 @@ def isrighttriangle(x1, y1, x2, y2, x3, y3):
 	d2 = distance(x1, y1, x3, y3)
 	d3 = distance(x2, y2, x3, y3)
 	
-	d = [d1, d2, d3]
-	a, b, c = sorted(d)
-	if a**2 + b**2 == c**2:
-		return True
-	else:
-		return False
+	return d1**2 + d2**2 == d3**2
