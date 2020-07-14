@@ -7,4 +7,14 @@
 
 def islegaltriangle(s1, s2, s3):
 	# your code goes here
-	pass
+	if s1 <= 0 or s2 <= 0 or s3 <= 0:
+		return False
+	max_side = max(s1, s2, s3)
+	if (max_side == s1 and s2 + s3 > s1):
+		return True
+	elif (max_side == s2 and s1 + s3 > s2):
+		return True
+	elif (max_side == s3 and s1 + s2 > s3):
+		return True
+	else:
+		return False
