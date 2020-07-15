@@ -20,6 +20,7 @@ def helper(n, k, d):
 def fun_set_kth_digit(n, k, d):
 	if n < 0:
 		ans = helper(n, k, d)
+		print(ans)
 		ans = "-" + ans
 		return int(ans)
 	else:
