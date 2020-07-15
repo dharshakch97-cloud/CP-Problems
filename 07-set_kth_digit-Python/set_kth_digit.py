@@ -7,5 +7,15 @@
 
 
 def fun_set_kth_digit(n, k, d):
-		return 0
+	l = list()
+	while (n > 0):
+		l.append(str(n%10))
+		n = n//10
+	if k >= len(l):
+		l.append(str(d))
+	else:
+		l[k] = str(d)
+	l.reverse()
+	ans = "".join(l)
+	return int(ans)
 
