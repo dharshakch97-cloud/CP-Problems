@@ -11,7 +11,7 @@ def fun_nearestodd(n):
 	elif n%2 == 1:
 		return n
 	else:
-		return (n - (n % 2) + 1)
+		return round((n - (n % 2) + 1))
 
 print(fun_nearestodd(14.2))
 print(fun_nearestodd(16.5))
