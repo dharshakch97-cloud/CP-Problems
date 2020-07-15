@@ -9,3 +9,4 @@ def fun_threelines_area(a, b, c):
 	area = math.sqrt(s*(s-a)*(s-b)*(s-c))
 	return area
 	
+print(fun_threelines_area(4, 4, 3))
