@@ -9,3 +9,5 @@ def hasconsecutivedigits(n):
 	if len(n) != len(check):
 		return True
 	return False
+
+print(hasconsecutivedigits(26011))
