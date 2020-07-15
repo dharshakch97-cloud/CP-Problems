@@ -36,7 +36,7 @@ locations = {
             },
         'Asia': {
             'India': ['Bangalore'],
-            'China': ['Shangai']
+            'China': ['Shanghai']
         },
         'Africa': {
             'Egypt': ['Cairo']
