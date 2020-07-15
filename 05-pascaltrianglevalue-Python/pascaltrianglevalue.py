@@ -10,4 +10,6 @@
 import math
 
 def fun_pascaltrianglevalue(row, col):
+	if (col > row):
+		return 0
 	return math.factorial(row) / (math.factorial(col) * math.factorial(row - col))
