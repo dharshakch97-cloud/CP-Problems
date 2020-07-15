@@ -25,4 +25,8 @@ def fun_set_kth_digit(n, k, d):
 	else:
 		return helper(n, k, d)
 
+print(fun_set_kth_digit(468, 0, 1))
+print(fun_set_kth_digit(468, 1, 1))
+print(fun_set_kth_digit(468, 2, 1))
+print(fun_set_kth_digit(468, 3, 1))
 print(fun_set_kth_digit(-468, 3, 1))
