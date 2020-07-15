@@ -13,5 +13,6 @@ def mostfrequentdigit(n):
 
 	r = max(d.values())
 	print(r)
+	return r
 
 print(mostfrequentdigit(26011))
