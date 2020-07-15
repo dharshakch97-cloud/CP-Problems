@@ -20,3 +20,4 @@ def fun_set_kth_digit(n, k, d):
 	ans = "".join(l)
 	return int(ans)
 
+print(fun_set_kth_digit(-468, 3, 1))
