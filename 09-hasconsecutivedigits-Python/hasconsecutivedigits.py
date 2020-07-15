@@ -11,3 +11,4 @@ def hasconsecutivedigits(n):
 	return False
 
 print(hasconsecutivedigits(26011))
+print(hasconsecutivedigits(24))
