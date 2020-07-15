@@ -54,3 +54,5 @@ def alphaAsia():
     for i in res_keys:
         ans.append(res[i][0] + "-" +i)
     return ans
+
+print(alphaAsia())
