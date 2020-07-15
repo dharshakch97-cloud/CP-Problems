@@ -1,0 +1,8 @@
+{
+    "python.testing.pytestArgs": [
+        "01-find_int_roots-Python"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true
+}
