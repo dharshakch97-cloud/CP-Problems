@@ -8,7 +8,8 @@ def hasconsecutivedigits(n):
 	check = set(n)
 	if len(n) != len(check):
 		return True
-	return False
+	return False  
+	
 
 print(hasconsecutivedigits(26011))
 print(hasconsecutivedigits(24))
