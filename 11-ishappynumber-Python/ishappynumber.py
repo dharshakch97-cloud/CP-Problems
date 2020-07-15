@@ -14,6 +14,27 @@
 # assert(ishappynumber(404) == True)
 # assert(ishappynumber(405) == False)
 
+def squares(n):
+	sum = 0
+	while n > 0:
+		r = n % 10
+		sum += r * r
+		n = n // 10
+	return sum
+
 def ishappynumber(n):
 	# your code goes here
-	pass
+	numList = list()
+	if n == 1:
+		return True
+	elif n > 0:
+		while True:
+			n = squares(n)
+			if n == 1:
+				return True
+			elif n in numList:
+				return False
+			else:
+				numList.append(n)
+	else:
+		return False
