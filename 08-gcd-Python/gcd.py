@@ -15,4 +15,4 @@ def gcd(m, n):
 	elif x % y == 0:
 		return y
 	else:
-		return gcd(y, x%y)
+		return gcd(y, x % y)
