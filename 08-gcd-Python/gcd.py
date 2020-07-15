@@ -10,9 +10,12 @@
 
 def gcd(m, n):
 	# your code goes here
-	if y == 0:
-		return x
-	elif x % y == 0:
-		return y
+	if n == 0:
+		return m
+	elif m % n == 0:
+		return n
 	else:
-		return gcd(y, x % y)
+		return gcd(n, m % n)
+
+print(gcd(1000, 12345))
+print(gcd(88886, 474747))
