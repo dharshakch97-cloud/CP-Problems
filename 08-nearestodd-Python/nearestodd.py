@@ -11,4 +11,4 @@ def fun_nearestodd(n):
 	else:
 		round(n)
 
-
+print(fun_nearestodd(14.2))
