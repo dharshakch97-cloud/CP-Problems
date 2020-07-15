@@ -7,9 +7,9 @@
 
 def fun_get_kth_digit(digit, k):
 	n = abs(digit)
-	n = n/(10**k)
-	n = n//1
-	n = n%10
+	n = (n/(10**k))%10
+	# n = n//1
+	# n = n%10
 	return int(n)
 
 print(fun_get_kth_digit(789, 0))
