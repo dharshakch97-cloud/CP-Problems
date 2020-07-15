@@ -52,5 +52,5 @@ def alphaAsia():
     res_keys.sort(reverse=True)
     ans = list()
     for i in res_keys:
-        ans.append(res[i][0] + '-' + +i)
+        ans.append(res[i][0] + "-" + +i)
     return ans
