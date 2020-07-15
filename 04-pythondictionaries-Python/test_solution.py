@@ -11,7 +11,7 @@ def test_classiness_1(result, check):
     assert result == check
 
 
-location = ['Bangalore - India', 'Shangai - China']
+location = ['Bangalore - India', 'Shanghai - China']
 @pytest.mark.parametrize('result,check',[
     (location,alphaAsia())
 ])
