@@ -38,3 +38,7 @@ def ishappynumber(n):
 				numList.append(n)
 	else:
 		return False
+
+print(ishappynumber(1))
+print(ishappynumber(98))
+print(ishappynumber(97))
