@@ -9,6 +9,8 @@
 import math
 def fun_find_int_roots(a, b, c):
 	det = math.sqrt(b**2 - 4 * a * c)
-	return (-b + det)/2 * a, (-b - det)/2 * a
+	r1 = int((-b + det)/2 * a)
+	r2 = int((-b - det)/2 * a)
+	return r1, r2
 
 print(fun_find_int_roots(1, -5, 6))
