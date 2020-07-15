@@ -50,5 +50,6 @@ def alphaAsia():
     res = locations['Asia']
     res_keys = list(res.keys()).sort()
     ans = list()
-    for i in res:
+    for i in res_keys:
         ans.append(res[i][0] + '-' + +i)
+    return ans
