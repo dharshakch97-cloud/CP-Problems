@@ -23,7 +23,7 @@ def fun_set_kth_digit(n, k, d):
 		ans = "-" + ans
 		return int(ans)
 	else:
-		return helper(n, k, d)
+		return int(helper(n, k, d))
 
 print(fun_set_kth_digit(468, 0, 1))
 print(fun_set_kth_digit(468, 1, 1))
