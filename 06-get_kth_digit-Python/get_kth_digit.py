@@ -6,8 +6,8 @@
 
 
 def fun_get_kth_digit(digit, k):
-	# n = abs(digit)
-	n = int((digit/(10**k))%10)
+	n = abs(digit)
+	n = int((n/(10**k))%10)
 	# n = n//1
 	# n = n%10
 	return 
