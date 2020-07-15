@@ -15,3 +15,4 @@ def fun_nearestodd(n):
 
 print(fun_nearestodd(14.2))
 print(fun_nearestodd(16.5))
+print(fun_nearestodd(12.0))
