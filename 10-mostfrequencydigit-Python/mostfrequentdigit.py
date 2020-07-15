@@ -4,6 +4,7 @@
 
 def mostfrequentdigit(n):
 	# your code goes here
+	res = list()
 	d = dict()
 	for i in str(n):
 		if i in d:
@@ -12,7 +13,10 @@ def mostfrequentdigit(n):
 			d[i] = 0
 
 	r = max(d.values())
-	print(r)
-	return r
+	for i in d.keys():
+		if d[i] == r:
+			res.append(int(i))
+	
+	return min(res)
 
 print(mostfrequentdigit(26011))
