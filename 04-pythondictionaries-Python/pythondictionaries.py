@@ -48,7 +48,8 @@ def sortUSA():
 
 def alphaAsia():
     res = locations['Asia']
-    res_keys = list(res.keys()).sort()
+    res_keys = list(res.keys())
+    res_keys.sort(reverse=True)
     ans = list()
     for i in res_keys:
         ans.append(res[i][0] + '-' + +i)
