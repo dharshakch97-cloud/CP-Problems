@@ -8,6 +8,7 @@
 
 def fun_set_kth_digit(n, k, d):
 	l = list()
+	n = abs(n)
 	while (n > 0):
 		l.append(str(n%10))
 		n = n//10
