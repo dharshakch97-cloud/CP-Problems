@@ -13,5 +13,5 @@ def fun_nthfibonaccinumber(n):
 		return n
 	return fun_nthfibonaccinumber(n - 1) + fun_nthfibonaccinumber(n - 2)
 
-print(fun_nthfibonaccinumber(0))
-print(fun_nthfibonaccinumber(1))
+print(fun_nthfibonaccinumber(5))
+print(fun_nthfibonaccinumber(11))
