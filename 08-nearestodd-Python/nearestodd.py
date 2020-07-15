@@ -7,7 +7,7 @@
 
 def fun_nearestodd(n):
 	if n%2 == 0:
-		return n - 1
+		return round(n - 1)
 	elif n%2 == 1:
 		return n
 	else:
