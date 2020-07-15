@@ -4,4 +4,14 @@
 
 def mostfrequentdigit(n):
 	# your code goes here
-	pass
+	d = dict()
+	for i in str(n):
+		if i in d:
+			d[i] += 1
+		else:
+			d[i] = 0
+
+	r = max(d.values())
+	print(r)
+
+print(mostfrequentdigit(26011))
