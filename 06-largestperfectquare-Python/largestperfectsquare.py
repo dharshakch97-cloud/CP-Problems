@@ -11,7 +11,10 @@ import math
 
 def largestperfectsquare(n):
 	# your code goes here
-	if (type(math.sqrt(n)) == int):
+	if (int(math.sqrt(n) == math.sqrt(n))):
 		return n
 	else:
 		return largestperfectsquare(n - 1)
+
+print(largestperfectsquare(24))
+print(largestperfectsquare(26))
