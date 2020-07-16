@@ -6,7 +6,7 @@
 
 def isrotated(str1, str2):
 	#Your code goes here
-	l = str1[::-1]
+	l = str1[1:] + str1[:1]
 	print(l)
 
 isrotated("XYZ", "ZXY")
