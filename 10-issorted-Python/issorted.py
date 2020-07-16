@@ -7,6 +7,8 @@
 
 def issorted(a):
 	# your code goes here
+	if len(a) <= 1:
+		return True
 	check = a[0] - a[1]
 	for i in range(len(a) - 1):
 		if a[i] - a[i + 1] != check:
