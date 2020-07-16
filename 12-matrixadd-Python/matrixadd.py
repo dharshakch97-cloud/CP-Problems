@@ -29,5 +29,5 @@ def matrixadd(L, M):
 	else:
 		return None
 
-print(matrixadd([[1,  2,  3],[4,  5,  6]], [[21, 22, 23], [24, 25, 26]]))
+# print(matrixadd([[1,  2,  3],[4,  5,  6]], [[21, 22, 23], [24, 25, 26]]))
 print(matrixadd([[1, 2]], [[10]]))
