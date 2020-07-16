@@ -23,7 +23,7 @@ def fun_replace(s1, s2, s3):
 				ans += str[i] + s3
 			else:
 				ans += str[i]
-		print(ans)
+		return ans
 
 # fun_replace("helloworld123", "hello", "345")
 fun_replace("helloworld123", "123", "345")
