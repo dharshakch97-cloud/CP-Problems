@@ -49,4 +49,8 @@ def fun_nth_happy_prime(n):
 	else:
 		return 7
 
+print(fun_nth_happy_prime(0))
 print(fun_nth_happy_prime(1))
+print(fun_nth_happy_prime(2))
+print(fun_nth_happy_prime(3))
+print(fun_nth_happy_prime(4))
