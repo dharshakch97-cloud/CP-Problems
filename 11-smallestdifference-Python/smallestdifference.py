@@ -13,4 +13,5 @@ def smallestdifference(a):
 		if d > d1:
 			d = d1
 	return d
-	
+
+print(smallestdifference([3, -7, 0]))
