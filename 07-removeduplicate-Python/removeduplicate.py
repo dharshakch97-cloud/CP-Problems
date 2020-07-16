@@ -13,3 +13,4 @@ def removeduplicate(text):
 	print("".join(set))
 
 removeduplicate("JavaPython")
+removeduplicate("Helloworld")
