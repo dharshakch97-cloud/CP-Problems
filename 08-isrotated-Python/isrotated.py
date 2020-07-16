@@ -9,4 +9,4 @@ def isrotated(str1, str2):
 	l = str1[len(str1)-1:] + str1[0:len(str1)-1]
 	return l
 
-isrotated("XYZ", "ZXY")
+print(isrotated("XYZ", "ZXY"))
