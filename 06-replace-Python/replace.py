@@ -12,7 +12,9 @@ def fun_replace(s1, s2, s3):
 	print(str)
 	if len(str[0]) == len(s1):
 		return s1
-	return s1
+	elif len(str[0]) == 0:
+		str[0] = s3
+		print(str)
 
 fun_replace("helloworld123", "hello", "345")
 fun_replace("helloworld123", "123", "345")
