@@ -14,10 +14,12 @@ def isrotated(str1, str2):
 		if s == i:
 			break
 	
+	print(res)
 	for i in range(len(str1)):
 		if str1[i] == s:
 			st = str1[i::]
 	
+	print(st)
 	result = st + res
 	print(result)
 	if result == str2:
