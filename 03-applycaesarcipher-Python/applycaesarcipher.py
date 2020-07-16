@@ -20,7 +20,9 @@ def fun_applycaesarcipher(msg, shift):
 			str += chr((ord(ch) + shift - 65) % 26 + 65)
 		else:
 			str += chr((ord(ch) + shift - 97) % 26 + 97)
-	return ""
+	return str
+
+print(fun_applycaesarcipher("We Attack At Dawn", 1))
 
 
 
