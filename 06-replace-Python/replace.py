@@ -13,3 +13,4 @@ def fun_replace(s1, s2, s3):
 	return s1
 
 fun_replace("helloworld123", "hello", "345")
+fun_replace("helloworld123", "123", "345")
