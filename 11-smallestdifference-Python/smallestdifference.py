@@ -11,8 +11,8 @@ def smallestdifference(a):
 	elif len(a) > 0:
 		l = sorted(a)
 		d = l[1] - l[0]
-		for i in range(1, len(a) - 1):
-			d1 = a[i + 1] - a[i]
+		for i in range(1, len(l) - 1):
+			d1 = l[i + 1] - l[i]
 			if d > d1:
 				d = d1
 		return d
