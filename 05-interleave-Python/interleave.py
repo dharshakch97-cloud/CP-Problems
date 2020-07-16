@@ -26,3 +26,4 @@ def fun_interleave(s1,s2):
 	return ""
 	
 print(fun_interleave("pto", "yhn"))
+print(fun_interleave("a#e23r3f", "cD!"))
