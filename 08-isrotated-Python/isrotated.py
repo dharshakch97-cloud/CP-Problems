@@ -28,6 +28,6 @@ def isrotated(str1, str2):
 	else:
 		return False
 
-print(isrotated("XYZ", "ZXY"))
+# print(isrotated("XYZ", "ZXY"))
 # print(isrotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZA"))
-# print(isrotated("12345", "54321"))
+print(isrotated("12345", "54321"))
