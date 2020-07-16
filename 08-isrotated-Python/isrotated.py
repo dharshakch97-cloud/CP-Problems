@@ -25,3 +25,4 @@ def isrotated(str1, str2):
 
 print(isrotated("XYZ", "ZXY"))
 print(isrotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZA"))
+print(isrotated("12345", "54321"))
