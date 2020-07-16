@@ -14,6 +14,6 @@ def fun_replace(s1, s2, s3):
 	print(str)
 	return s1
 
-fun_replace("helloworld123", "hello", "345")
-fun_replace("helloworld123", "123", "345")
+# fun_replace("helloworld123", "hello", "345")
+# fun_replace("helloworld123", "123", "345")
 fun_replace("helloworld123", "34567", "345")
