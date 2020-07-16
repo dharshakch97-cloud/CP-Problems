@@ -14,3 +14,4 @@ def removeduplicate(text):
 
 removeduplicate("JavaPython")
 removeduplicate("Helloworld")
+removeduplicate("EEE")
