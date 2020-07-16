@@ -18,7 +18,10 @@ def isrotated(str1, str2):
 			st = str1[i:]
 	
 	result = st + res
-	return result
+	if result == str2:
+		return True
+	else:
+		return False
 
 print(isrotated("XYZ", "ZXY"))
 print(isrotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZA"))
