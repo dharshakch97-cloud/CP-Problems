@@ -6,8 +6,10 @@
 
 def isrotated(str1, str2):
 	#Your code goes here
-	l = str1[len(str1)-1:] + str1[0:len(str1)-1]
-	return l
+	res = ""
+	s = str2[:1]
+	print(s)
+	# return l
 
 print(isrotated("XYZ", "ZXY"))
 print(isrotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZA"))
