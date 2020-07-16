@@ -5,7 +5,11 @@
 
 def removeduplicate(text):
 	# Your code goes here
-	dup = set(text)
-	print(dup)
+	set = list()
+	for i in text:
+		if i in set:
+			continue
+		set.append(i)
+	print("".join(set))
 
 removeduplicate("JavaPython")
