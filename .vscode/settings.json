@@ -1,0 +1,8 @@
+{
+    "python.testing.pytestArgs": [
+        "01-nth_happy_number-Python"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true
+}
