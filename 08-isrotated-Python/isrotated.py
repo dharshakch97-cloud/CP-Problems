@@ -10,3 +10,4 @@ def isrotated(str1, str2):
 	return l
 
 print(isrotated("XYZ", "ZXY"))
+print(isrotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZA"))
