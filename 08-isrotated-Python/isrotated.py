@@ -9,9 +9,10 @@ def isrotated(str1, str2):
 	res = ""
 	s = str2[:1:]
 	for i in str1:
+		if s != i:
+			res += i
 		if s == i:
 			break
-		res += i
 	
 	for i in range(len(str1)):
 		if str1[i] == s:
@@ -24,6 +25,6 @@ def isrotated(str1, str2):
 	else:
 		return False
 
-print(isrotated("XYZ", "ZXY"))
-print(isrotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZA"))
+# print(isrotated("XYZ", "ZXY"))
+# print(isrotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "BCDEFGHIJKLMNOPQRSTUVWXYZA"))
 print(isrotated("12345", "54321"))
