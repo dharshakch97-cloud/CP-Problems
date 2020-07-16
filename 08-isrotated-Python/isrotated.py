@@ -18,6 +18,7 @@ def isrotated(str1, str2):
 			st = str1[i::]
 	
 	result = st + res
+	print(result)
 	if result == str2:
 		return True
 	else:
