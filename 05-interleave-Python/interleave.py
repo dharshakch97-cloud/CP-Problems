@@ -15,12 +15,12 @@ def fun_interleave(s1,s2):
 		return str
 	elif len(s1) > len(s2):
 		for i in range(len(s2)):
-			str += s2[i] + s1[i]
+			str += s1[i] + s2[i]
 		str += s1[len(s2):len(s1):1]
 		return str
 	elif len(s2) > len(s1):
 		for i in range(len(s1)):
-			str += s2[i] + s1[i]
+			str += s1[i] + s2[i]
 		str += s2[len(s1):len(s2):1]
 		return str
 	return ""
