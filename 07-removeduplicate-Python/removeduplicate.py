@@ -10,7 +10,8 @@ def removeduplicate(text):
 		if i in set:
 			continue
 		set.append(i)
-	print("".join(set))
+	# print("".join(set))
+	return "".join(set)
 
 removeduplicate("JavaPython")
 removeduplicate("Helloworld")
