@@ -21,7 +21,12 @@ def matrixadd(L, M):
 	
 	# print(len(L))
 	# print(len(L[0]))
-	if len(L) == len(M) and len(L[0]) == len(M[0]):
+	f = 0
+	if len(L) == len(M):
+		for i in range(len(L)):
+			if len(L[i]) != len(M[i]):
+				f = 1
+	if f == 0:
 		for i in range(len(L)):
 			for j in range(len(L[0])):
 				res[i][j] = L[i][j] + M[i][j]
@@ -31,3 +36,4 @@ def matrixadd(L, M):
 
 print(matrixadd([[1,  2,  3],[4,  5,  6]], [[21, 22, 23], [24, 25, 26]]))
 print(matrixadd([[1, 2]], [[10]]))
+print(matrixadd([[1,  2,  3],[4,  5,  6]], [[21, 22, 23], [24, 25]]))
