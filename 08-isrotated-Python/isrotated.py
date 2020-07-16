@@ -6,6 +6,6 @@
 
 def isrotated(str1, str2):
 	#Your code goes here
-	print(list(str1))
+	print(list(str1).reverse)
 
 isrotated("XYZ", "ZXY")
