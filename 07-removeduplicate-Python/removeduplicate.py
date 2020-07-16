@@ -7,3 +7,5 @@ def removeduplicate(text):
 	# Your code goes here
 	dup = set(text)
 	print(dup)
+
+removeduplicate("JavaPython")
