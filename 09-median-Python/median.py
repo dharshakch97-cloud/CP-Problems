@@ -13,3 +13,4 @@ def median(a):
 		return a[(len(a) - 1)//2]
 
 print(median([1]))
+print(median([1, 2, 3, 4, 5]))
