@@ -5,4 +5,5 @@
 
 def removeduplicate(text):
 	# Your code goes here
-	pass
+	dup = set(text)
+	print(dup)
