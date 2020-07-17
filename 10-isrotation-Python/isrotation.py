@@ -29,3 +29,4 @@ def isrotation(x, y):
 		return False
 
 print(isrotation(12345,54321))
+print(isrotation(10010, 10100))
