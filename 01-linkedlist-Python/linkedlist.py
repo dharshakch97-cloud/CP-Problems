@@ -76,4 +76,4 @@ ll.append(e3)
 # print(ll.get_position(2).value)
 
 ll.insert(e4, 3)
-print(ll.get_position(3).value)
+print(ll.get_position(4).value)
