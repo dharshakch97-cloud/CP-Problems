@@ -40,3 +40,4 @@ ll.append(e2)
 ll.append(e3)
 
 print(ll.head.next.next.value)
+print(ll.get_position(3).value)
