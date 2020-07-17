@@ -29,3 +29,14 @@ def test_delete(val,result):
     ll.delete(1)
     assert ll.get_position(val).value == result
 
+
+e1 = Element(1)
+e2 = Element(2)
+e3 = Element(3)
+e4 = Element(4)
+
+ll = LinkedList(e1)
+ll.append(e2)
+ll.append(e3)
+
+print(ll.head.next.next.value)
