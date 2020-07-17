@@ -76,3 +76,4 @@ print(ll.head.next.next.value)
 print(ll.get_position(2).value)
 
 ll.insert(e4, 3)
+print(ll.get_position(3).value)
