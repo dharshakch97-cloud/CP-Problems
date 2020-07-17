@@ -19,7 +19,7 @@ def fun_nth_palindromic_prime(n):
 	i = 3
 
 	while count != n:
-		if str(i) == str(x)[::-1]:
+		if str(i) == str(i)[::-1]:
 			if isprime(i):
 				count += 1
 			if count == n:
@@ -27,3 +27,7 @@ def fun_nth_palindromic_prime(n):
 		i += 1
 		
 	return False
+
+print(fun_nth_palindromic_prime(0))
+print(fun_nth_palindromic_prime(1))
+print(fun_nth_palindromic_prime(10))
