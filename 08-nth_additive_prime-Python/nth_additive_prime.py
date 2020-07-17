@@ -27,3 +27,4 @@ def fun_nth_additive_prime(n):
 	return False
 
 print(fun_nth_additive_prime(1))
+print(fun_nth_additive_prime(25))
