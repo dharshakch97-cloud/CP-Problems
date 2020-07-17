@@ -13,7 +13,7 @@ def fun_nth_additive_prime(n):
 	if n == 0:
 		return 2
 	
-	count = 0
+	count = 1
 	i = 3
 
 	while count != n:
