@@ -10,13 +10,23 @@
 #  assert(fun_isfactorish(420) == False) # 420 has a 0 (0 is not a factor)
 #  assert(fun_isfactorish(42) == False) # 42 has a leading 0 (only 2 unique digits)
 
+def fun_isfactor(f, n):
+	if f == 0 and n == 0:
+		return True
+	if f != 0:
+		return n%f == 0
+	else:
+		return False
 
 def fun_isfactorish(n):
-	nums = list(map(int, str(n)))
-	uni = set(nums)
-	if len(uni) > 3:
+	if len(str(n)) > 3 or len(set(str(n))) != 3:
 		return False
-	# for i in nums:
-	# return False
+	else:
+		nums = list(map(int, str(n)))
+		for i in nums:
+			if fun_isfactor(i, n) != True:
+				return False
+		return True
 
 print(fun_isfactorish(4128))
+print(fun_isfactorish(412))
