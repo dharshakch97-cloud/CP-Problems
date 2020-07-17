@@ -88,3 +88,4 @@ ll.insert(e4, 3)
 print(ll.get_position(4).value)
 
 ll.delete(1)
+print(ll.get_position(1).value)
