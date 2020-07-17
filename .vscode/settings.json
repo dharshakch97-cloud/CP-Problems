@@ -1,0 +1,8 @@
+{
+    "python.testing.pytestArgs": [
+        "09-nth_palindromic_prime-Python"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true
+}
