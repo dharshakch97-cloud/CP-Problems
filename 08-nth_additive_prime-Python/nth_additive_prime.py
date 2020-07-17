@@ -15,3 +15,5 @@ def fun_nth_additive_prime(n):
 	if isprime(s):
 		return True
 	return False
+
+print(fun_nth_additive_prime(113))
