@@ -18,7 +18,13 @@ def fun_nth_additive_prime(n):
 
 	while count != n:
 		if isprime(i):
-			s = sum(list(map(int, str(n))))
+			# s = sum(list(map(int, str(n))))
+			s = 0
+			temp = i
+			while temp != 0:
+				t = temp%10
+				s += t
+				temp = temp//10
 			if isprime(s):
 				count += 1
 			if count == n:
