@@ -19,6 +19,7 @@ def fun_isfactor(f, n):
 		return False
 
 def fun_isfactorish(n):
+	n = abs(n)
 	if len(str(n)) > 3 or len(set(str(n))) != 3:
 		return False
 	else:
