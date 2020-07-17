@@ -62,3 +62,17 @@ class LinkedList(object):
         """Delete the first node with a given value."""
         # Your code goes here
         pass
+
+e1 = Element(1)
+e2 = Element(2)
+e3 = Element(3)
+e4 = Element(4)
+
+ll = LinkedList(e1)
+ll.append(e2)
+ll.append(e3)
+
+print(ll.head.next.next.value)
+print(ll.get_position(2).value)
+
+ll.insert(e4, 3)
