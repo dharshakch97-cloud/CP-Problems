@@ -26,4 +26,4 @@ def fun_nth_additive_prime(n):
 		i += 1
 	return False
 
-print(fun_nth_additive_prime(0))
+print(fun_nth_additive_prime(1))
