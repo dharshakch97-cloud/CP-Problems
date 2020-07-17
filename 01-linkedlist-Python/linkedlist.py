@@ -33,11 +33,12 @@ class LinkedList(object):
         Return "None" if position is not in the list."""
         # Your code goes here
         temp = self.head
-        count = 1
-        while count < position and temp:
-            temp = temp.next
-            count += 1
-        return temp
+        for i in range(1, position):
+            if temp.value == None:
+                return None
+            else:
+                temp = temp.next
+        return temp.value
     
     def insert(self, new_element, position):
         """Insert a new node at the given position.
@@ -45,32 +46,34 @@ class LinkedList(object):
         Inserting at position 3 means between
         the 2nd and 3rd elements."""
         # Your code goes here
-        count = 1
-        temp = self.head
-        if position > 1:
-            while temp and count < position:
-                if count == position - 1:
-                    new_element.next = temp.next
-                    temp.next = new_element
-                temp = temp.next
-                count += 1
-        elif position == 1:
-            new_element.next = self.head
+        if position == 1:
+            old = self.head
+            new_element.next = old
             self.head = new_element
+            return
+
+        temp = self.head
+        for i in range(1, position):
+            old = temp.next
+            new_element.next = old
+            temp.next = new_element
     
     def delete(self, value):
         """Delete the first node with a given value."""
         # Your code goes here
+        if self.head.value == value:
+            temp_next = self.head.next
+            self.head = temp_next
+            return
+
         temp = self.head
-        prev = None
-        while temp.value != value and temp.next:
-            prev = temp
-            temp = temp.next
-        if temp.value == value:
-            if prev:
-                prev.next = temp.next
+        while temp.next:
+            if temp.next.value == value:
+                temp_next = temp.next.next
+                temp.next = temp_next
+                return
             else:
-                self.head = temp.next
+                temp = temp.next
 
 e1 = Element(1)
 e2 = Element(2)
@@ -85,7 +88,10 @@ ll.append(e3)
 # print(ll.get_position(2).value)
 
 ll.insert(e4, 3)
-print(ll.get_position(4).value)
+# print(ll.get_position(4).value)
 
 ll.delete(1)
 print(ll.get_position(1).value)
+print(ll.get_position(2).value)
+print(ll.get_position(3).value)
+print(ll.get_position(4).value)
