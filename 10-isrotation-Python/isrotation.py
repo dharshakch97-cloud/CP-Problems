@@ -27,3 +27,5 @@ def isrotation(x, y):
 		return True
 	else:
 		return False
+
+print(isrotation(12345,54321))
