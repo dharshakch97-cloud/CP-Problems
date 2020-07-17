@@ -10,10 +10,20 @@ def isprime(n):
 	return False
 
 def fun_nth_additive_prime(n):
-	nums = list(map(int, str(n)))
-	s = sum(nums)
-	if isprime(s):
-		return True
+	if n == 0:
+		return 2
+	
+	count = 0
+	i = 3
+
+	while count != n:
+		if isprime(i):
+			s = sum(list(map(int, str(n))))
+			if isprime(s):
+				count += 1
+			if count == n:
+				return i
+		i += 1
 	return False
 
-print(fun_nth_additive_prime(113))
+print(fun_nth_additive_prime(0))
