@@ -12,5 +12,11 @@
 
 
 def fun_isfactorish(n):
-	return False
+	nums = list(map(int, str(n)))
+	uni = set(nums)
+	if len(uni) > 3:
+		return False
+	# for i in nums:
+	# return False
 
+print(fun_isfactorish(4128))
