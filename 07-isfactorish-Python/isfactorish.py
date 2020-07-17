@@ -30,3 +30,4 @@ def fun_isfactorish(n):
 
 print(fun_isfactorish(4128))
 print(fun_isfactorish(412))
+print(fun_isfactorish(-412))
