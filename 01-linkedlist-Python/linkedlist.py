@@ -75,23 +75,3 @@ class LinkedList(object):
             else:
                 temp = temp.next
 
-e1 = Element(1)
-e2 = Element(2)
-e3 = Element(3)
-e4 = Element(4)
-
-ll = LinkedList(e1)
-ll.append(e2)
-ll.append(e3)
-
-# print(ll.head.next.next.value)
-# print(ll.get_position(2).value)
-
-ll.insert(e4, 3)
-# print(ll.get_position(4).value)
-
-ll.delete(1)
-print(ll.get_position(1).value)
-print(ll.get_position(2).value)
-print(ll.get_position(3).value)
-print(ll.get_position(4).value)
