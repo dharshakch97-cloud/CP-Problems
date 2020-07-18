@@ -28,3 +28,4 @@ def lookandsay(a):
 
 print(lookandsay([1, 1, 1]))
 print(lookandsay([3,3,8,-10,-10,-10]))
+print(lookandsay([]))
