@@ -9,8 +9,8 @@
 def fun_rotatestrings(s, n):
 	lfirst = s[0:n]
 	lsecond = s[n:]
-	rfirst = s[0:len(s)-n]
-	rsecond = s[len(s)-n:]
+	rfirst = s[0:len(s)-abs(n)]
+	rsecond = s[len(s)-abs(n):]
 
 	if n < 0:
 		return lsecond + lfirst
