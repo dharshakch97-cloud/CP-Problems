@@ -15,4 +15,9 @@
 
 def ismostlymagicsquare(a):
 	# Your code goes here
-	pass
+	res = [[0 for i in range(len(a))] for j in range(len(a[0]))]
+	# for i in range(len(a)):
+	# 	for j in range(len(a[i])):
+	return res
+
+print(ismostlymagicsquare([[2, 7, 6], [9, 5, 1], [4, 3, 8]]))
