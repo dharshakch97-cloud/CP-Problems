@@ -30,9 +30,3 @@ def fun_rotatestrings(s, n):
 print(fun_rotatestrings('ac323', 8))
 # print(fun_rotatestrings('abcd', 3))
 # print(fun_rotatestrings('abcd', -6))
-'''
-	s = ac323 n = 8
-	len(s) = 5
-	n = n - len(s) => 8 - 5 = 3
-	s[0:3] = ac3 s[3:] = 23
-'''
