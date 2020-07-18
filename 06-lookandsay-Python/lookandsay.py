@@ -10,14 +10,15 @@
 def lookandsay(a):
 	# Your code goes here
 	res = list()
-	for i in range(len(a)):
-		c = 0
-		val = a[i]
-		for j in range(i, len(a)):
-			if val != a[j]:
+	r = list()
+	c = 0
+	for i in a:
+		val = a.index(i)
+		for j in range(val, len(a)):
+			if i != a[j]:
 				break
 			c += 1
-		res.append((c, val))
+		res.append((c, i))
 	
 	return res
 
