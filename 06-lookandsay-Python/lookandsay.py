@@ -18,6 +18,8 @@ def lookandsay(a):
 			if i != a[j]:
 				break
 			c += 1
+			if  c == len(a):
+				break
 		res.append((c, i))
 	
 	return res
