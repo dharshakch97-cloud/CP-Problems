@@ -16,7 +16,7 @@
 # -fgh""")
 
 def fun_wordwrap(s, n):
-	s = s.lstrip()
+	s = s.lstrip().replace(" ", "-")
 	# print(s)
 	st = len(s)//n
 	if len(s)%n > 0:
@@ -28,6 +28,6 @@ def fun_wordwrap(s, n):
 		if i != st - 1:
 			s1 += "\n"
 	return s1 
-# print(fun_wordwrap(" a b c de fgh ",  4))
+print(fun_wordwrap(" a b c de fgh ",  4))
 print(fun_wordwrap("  abcdefghij", 4))
  
