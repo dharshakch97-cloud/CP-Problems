@@ -10,22 +10,18 @@
 def lookandsay(a):
 	# Your code goes here
 	res = list()
-	r = list()
-	for i in a:
-		c = 0
-		val = a.index(i)
-		for j in range(val, len(a)):
-			if i != a[j]:
-				break
+	c = 1
+	cl = 0
+	for i in range(len(a)-1):
+		cl += 1
+		if a[i] != a[i+1] or cl == len(a):
+			res.append((c, a[i]))
+			c = 1
+			break
+		else:
 			c += 1
-		print(str(c) + " " + str(i))
-		res.append((c, i))
-	for i in res:
-		if i in r:
-			continue
-		r.append(i)
 	
-	return r
+	return res
 
 # print(lookandsay([1, 1, 1]))
 # print(lookandsay([3,3,8,-10,-10,-10]))
