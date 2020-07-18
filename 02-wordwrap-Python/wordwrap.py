@@ -16,7 +16,7 @@
 # -fgh""")
 
 def fun_wordwrap(s, n):
-	s = s.lstrip().replace(" ", "-")
+	s = s.lstrip().rstrip().replace(" ", "-")
 	# print(s)
 	st = len(s)//n
 	if len(s)%n > 0:
