@@ -14,6 +14,8 @@ def fun_kth_occurrences(s, n):
 
 	occ = sorted(list(ch.values()), reverse=True)
 	print(occ[n-1])
-	return ch
+	for i in ch:
+		if ch[i] == occ[n-1]:
+			return i
 
 print(fun_kth_occurrences("helllo woorld", 2))
