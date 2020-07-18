@@ -12,7 +12,7 @@ def fun_rotatestrings(s, n):
 
 	if n == 0:
 		return s
-	if n > 0:
+	if n > len(s):
 		n = n - len(s)
 		# lfirst = s[0:n]
 		# lsecond = s[n:]
@@ -22,7 +22,7 @@ def fun_rotatestrings(s, n):
 	# print(lsecond + lfirst)
 	# print(rsecond + rfirst)
 
-print(fun_rotatestrings('abcd', -1))
+# print(fun_rotatestrings('abcd', -1))
 print(fun_rotatestrings('ac323', 8))
 print(fun_rotatestrings('abcd', 3))
-print(fun_rotatestrings('abcd', -6))
+# print(fun_rotatestrings('abcd', -6))
