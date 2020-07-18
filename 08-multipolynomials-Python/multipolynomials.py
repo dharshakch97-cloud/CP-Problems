@@ -10,7 +10,7 @@ def multipolynomials(p1, p2):
 	res = [0] * (len(p1) + len(p2) - 1)
 	for x, y in enumerate(p1):
 		for a, b in enumerate(p2):
-			res[x + a] = y * b
+			res[x + a] += y * b
 
 	return res
 
