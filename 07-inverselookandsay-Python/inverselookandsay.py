@@ -13,6 +13,7 @@ def inverselookandsay(a):
 	res = list()
 	for i in a:
 		s = i[0]
+		print(i[0])
 		while s != 0:
 			res.append(i[1])
 			print(i[1])
