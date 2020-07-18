@@ -15,19 +15,8 @@
 # c-de
 # -fgh""")
 
-def spaces(s, n):
-	if s[0] == " " and s[len(s)-1]:
-		return s[1:len(s)-1]
-	elif s[0] == " ":
-		return s[1:]
-	elif s[len(s)-1] == " ":
-		return s[:len(s)-1]
-	else:
-		return s
-	
-
 def fun_wordwrap(s, n):
-	s = spaces(s, n)
+	s = s.lstrip()
 	print(s)
 	res = ""
 	j = 0
