@@ -17,7 +17,7 @@
 
 def fun_wordwrap(s, n):
 	s = s.lstrip()
-	print(s)
+	# print(s)
 	res = ""
 	j = 0
 	while j < len(s):
