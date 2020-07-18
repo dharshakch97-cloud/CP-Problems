@@ -24,7 +24,7 @@ def lookandsay(a):
 	for i in res:
 		if i not in r:
 			r.append(i)
-	return res
+	return r
 
 # print(lookandsay([1, 1, 1]))
 # print(lookandsay([3,3,8,-10,-10,-10]))
