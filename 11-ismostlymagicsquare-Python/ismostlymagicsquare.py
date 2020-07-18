@@ -15,9 +15,20 @@
 
 def ismostlymagicsquare(a):
 	# Your code goes here
-	res = [[0 for i in range(len(a))] for j in range(len(a[0]))]
-	# for i in range(len(a)):
-	# 	for j in range(len(a[i])):
-	return res
+	res = [0]*((len(a)*2)+2)
+	for i in range(len(a)):
+		for j in range(len(a[i])):
+			res[j + len(a[0])] += a[i][j]
+		for k in range(len(a[i])):
+			res[i] += a[i][k]
+			if i == k:
+				res[len(a)*2] += a[i][k]
+			if len(a[i])-1-i == k:
+				res[len(a)*2+1] += a[i][k]
+
+	r = set(res)
+	if len(r) == 1:
+		return True
+	return False
 
 print(ismostlymagicsquare([[2, 7, 6], [9, 5, 1], [4, 3, 8]]))
