@@ -17,10 +17,11 @@ def lookandsay(a):
 			if val != a[j]:
 				break
 			c += 1
-		if c == len(a):
-			break
 		res.append((c, val))
-
-	return res
+	r = list()
+	for i in res:
+		if i not in r:
+			r.append(i)
+	return r
 
 print(lookandsay([1, 1, 1]))
