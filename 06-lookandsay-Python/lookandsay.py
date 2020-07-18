@@ -9,4 +9,16 @@
 
 def lookandsay(a):
 	# Your code goes here
-	pass
+	res = list()
+	for i in range(len(a)):
+		c = 0
+		val = a[i]
+		for j in range(i, len(a)):
+			if val != a[j]:
+				break
+			c += 1
+		res.append((c, val))
+
+	return res
+
+print(lookandsay([1, 1, 1]))
