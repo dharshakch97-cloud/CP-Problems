@@ -17,5 +17,5 @@ def fun_rotatestrings(s, n):
 	else:
 		return rsecond + rfirst
 
-print(fun_rotatestrings('abcd', -1))
+print(fun_rotatestrings('abcd', 1))
 
