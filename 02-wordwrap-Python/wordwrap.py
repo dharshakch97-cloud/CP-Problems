@@ -28,6 +28,7 @@ def spaces(s, n):
 
 def fun_wordwrap(s, n):
 	s = spaces(s, n)
+	print(s)
 	res = ""
 	j = 0
 	while j < len(s):
