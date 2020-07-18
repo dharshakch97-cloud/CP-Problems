@@ -14,9 +14,9 @@ def fun_getaverage(s):
 	sum = 0
 	count = 0
 	for i in st:
-		print(type(i))
-		if type(i) != str:
-			sum += i
+		# print(type(i))
+		if i.isdigit():
+			sum += int(i)
 			count += 1
 	
 	if count == 0:
