@@ -22,9 +22,7 @@ def fun_wordwrap(s, n):
 	j = 0
 	while j < len(s):
 		res = s[j:n]
-		if j == n:
-			res += "\n"
-			j += n
+		res += "\n"
 		j += n
 	return s
 
