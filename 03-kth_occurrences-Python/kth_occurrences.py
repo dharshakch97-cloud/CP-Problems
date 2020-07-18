@@ -5,6 +5,12 @@
 
 
 def fun_kth_occurrences(s, n):
-	return 'a'
+	ch = dict()
+	for i in s:
+		if i in ch:
+			ch[i] += 1
+		else:
+			ch[i] = 1
+	return ch
 
-
+print(fun_kth_occurrences("helllo woorld", 2))
