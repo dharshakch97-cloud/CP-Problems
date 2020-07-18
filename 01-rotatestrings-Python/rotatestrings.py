@@ -18,4 +18,4 @@ def fun_rotatestrings(s, n):
 		return rsecond + rfirst
 
 print(fun_rotatestrings('abcd', 1))
-
+print(fun_rotatestrings('ac323', 8))
