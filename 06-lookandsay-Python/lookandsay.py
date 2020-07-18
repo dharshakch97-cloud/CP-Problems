@@ -10,17 +10,20 @@
 def lookandsay(a):
 	# Your code goes here
 	res = list()
-	c = 1
-	cl = 0
-	for i in range(len(a)-1):
-		cl += 1
-		if a[i] != a[i+1] or cl == len(a):
-			res.append((c, a[i]))
-			c = 1
-			break
-		else:
+	r = list()
+	c = 0
+	for i in a:
+		c = 0
+		v = a.index(i)
+		for j in range(v, len(a)):
+			if i != a[j]:
+				break
 			c += 1
-	
+		res.append((c, i))
+
+	for i in res:
+		if i not in r:
+			r.append(i)
 	return res
 
 # print(lookandsay([1, 1, 1]))
