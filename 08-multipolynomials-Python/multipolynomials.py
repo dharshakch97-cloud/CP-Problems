@@ -15,3 +15,4 @@ def multipolynomials(p1, p2):
 	return res
 
 print(multipolynomials([2, 0, 3], [4, 5]))
+print(multipolynomials([1, 0], [1, 1]))
