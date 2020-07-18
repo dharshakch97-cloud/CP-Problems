@@ -12,7 +12,7 @@ def fun_kth_occurrences(s, n):
 		else:
 			ch[i] = 1
 
-	print(ch.values())
+	print(list(ch.values()))
 	return ch
 
 print(fun_kth_occurrences("helllo woorld", 2))
