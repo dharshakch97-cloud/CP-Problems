@@ -12,7 +12,7 @@ def fun_kth_occurrences(s, n):
 		else:
 			ch[i] = 1
 
-	occ = sorted(list(ch.values()))
+	occ = sorted(list(ch.values()), reverse=True)
 	print(occ)
 	return ch
 
