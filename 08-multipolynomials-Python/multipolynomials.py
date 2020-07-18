@@ -16,3 +16,4 @@ def multipolynomials(p1, p2):
 
 print(multipolynomials([2, 0, 3], [4, 5]))
 print(multipolynomials([1, 0], [1, 1]))
+print(multipolynomials([1, 1], [1, -1]))
