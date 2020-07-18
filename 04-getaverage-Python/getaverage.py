@@ -24,3 +24,4 @@ def fun_getaverage(s):
 	return float(sum/count)
 
 print(fun_getaverage("a,12,c,14,6,0"))
+print(fun_getaverage("13,excused,14,absent"))
