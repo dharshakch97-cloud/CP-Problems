@@ -15,6 +15,7 @@ def inverselookandsay(a):
 		s = i[0]
 		while s != 0:
 			res.append(i[1])
+			print(i[1])
 			s -= 1
 	return res
 
