@@ -12,12 +12,12 @@ def fun_rotatestrings(s, n):
 	rfirst = s[0:len(s)-n]
 	rsecond = s[len(s)-n:]
 
-	# if n > 0:
-	# 	return lsecond + lfirst
-	# else:
-	# 	return rsecond + rfirst
-	print(lsecond + lfirst)
-	print(rsecond + rfirst)
+	if n < 0:
+		return lsecond + lfirst
+	else:
+		return rsecond + rfirst
+	# print(lsecond + lfirst)
+	# print(rsecond + rfirst)
 
 print(fun_rotatestrings('abcd', -1))
 # print(fun_rotatestrings('ac323', 8))
