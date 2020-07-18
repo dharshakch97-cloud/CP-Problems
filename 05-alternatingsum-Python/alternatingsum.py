@@ -16,3 +16,4 @@ def fun_alternatingsum(a):
 
 print(fun_alternatingsum([5, 3, 8, 4]))
 print(fun_alternatingsum([99,56,23,98,45]))
+print(fun_alternatingsum([]))
