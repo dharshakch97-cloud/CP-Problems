@@ -29,6 +29,6 @@ def fun_wordwrap(s, n):
 		j += n
 	return s
 
-print(fun_wordwrap(" a b c de fgh ",  4))
+# print(fun_wordwrap(" a b c de fgh ",  4))
 print(fun_wordwrap("  abcdefghij", 4))
  
