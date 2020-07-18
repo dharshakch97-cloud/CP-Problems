@@ -10,5 +10,16 @@
 
 
 def fun_getaverage(s): 
-	return 0.0
+	st = s.split(",")
+	sum = 0
+	count = 0
+	for i in st:
+		if type(i) != str:
+			sum += i
+			count += 1
+	
+	if count == 0:
+		return 0.0
+	return float(sum/count)
 
+print(fun_getaverage("a,12,c,14,6,0"))
