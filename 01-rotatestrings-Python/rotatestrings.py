@@ -7,15 +7,18 @@
 
 
 def fun_rotatestrings(s, n):
-	lfirst = s[0:n]
-	lsecond = s[n:]
 	rfirst = s[0:len(s)-abs(n)]
 	rsecond = s[len(s)-abs(n):]
 
-	if n < 0:
-		return lsecond + lfirst
+	if n == 0:
+		return s
+	if n > 0:
+		n = n - len(s)
+		# lfirst = s[0:n]
+		# lsecond = s[n:]
+		return s[0:n] + s[n:]
 	else:
-		return rsecond + rfirst
+		return s[len(s)-abs(n):] + s[0:len(s)-abs(n)]
 	# print(lsecond + lfirst)
 	# print(rsecond + rfirst)
 
