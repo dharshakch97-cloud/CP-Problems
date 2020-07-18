@@ -10,4 +10,12 @@
 
 def inverselookandsay(a):
 	# Your code goes here
-	pass
+	res = list()
+	for i in a:
+		s = i[0]
+		while s != 0:
+			res.append(i[1])
+			s -= 1
+	return res
+
+print(inverselookandsay([(3, 1)]))
