@@ -11,8 +11,8 @@ def lookandsay(a):
 	# Your code goes here
 	res = list()
 	r = list()
-	c = 0
 	for i in a:
+		c = 0
 		val = a.index(i)
 		for j in range(val, len(a)):
 			if i != a[j]:
