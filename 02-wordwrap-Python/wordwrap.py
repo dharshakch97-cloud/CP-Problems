@@ -15,9 +15,28 @@
 # c-de
 # -fgh""")
 
+def spaces(s, n):
+	if s[0] == " " and s[len(s)-1]:
+		return s[1:len(s)-1]
+	elif s[0] == " ":
+		return s[1:]
+	elif s[len(s)-1] == " ":
+		return s[:len(s)-1]
+	else:
+		return s
+	
 
 def fun_wordwrap(s, n):
-	return ""
+	s = spaces(s, n)
+	res = ""
+	j = 0
+	while j < len(s):
+		res = s[j:n]
+		if j == n:
+			res += "\n"
+			j += n
+		j += n
+	return s
 
-
+print(fun_wordwrap(" a b c de fgh ",  4))
  
