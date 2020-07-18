@@ -18,17 +18,16 @@
 def fun_wordwrap(s, n):
 	s = s.lstrip()
 	# print(s)
-	res = ""
-	j = 0
-	while j < len(s):
-		res += s[j:n]
-		if j == n:
-			res += "\n"
-			print(res + "j:" + str(j) + "n:" + str(n))
-			j += n
-		j += n
-	return s
+	st = len(s)//n
+	if len(s)%n > 0:
+		st += 1
 
+	s1 = str()
+	for i in range(st):
+		s1 += s[i*n: n*(i+1)]
+		if i != st - 1:
+			s1 += "\n"
+	return s1 
 # print(fun_wordwrap(" a b c de fgh ",  4))
 print(fun_wordwrap("  abcdefghij", 4))
  
