@@ -18,7 +18,7 @@ def fun_rotatestrings(s, n):
 		n = n - len(s)
 		# lfirst = s[0:n]
 		# lsecond = s[n:]
-		return s[0:n] + s[n:]
+		return s[n:] + s[0:n]
 	elif n < 0:
 		return rsecond + rfirst
 	else:
@@ -30,3 +30,9 @@ def fun_rotatestrings(s, n):
 print(fun_rotatestrings('ac323', 8))
 # print(fun_rotatestrings('abcd', 3))
 # print(fun_rotatestrings('abcd', -6))
+'''
+	s = ac323 n = 8
+	len(s) = 5
+	n = n - len(s) => 8 - 5 = 3
+	s[0:3] = ac3 s[3:] = 23
+'''
