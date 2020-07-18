@@ -18,10 +18,8 @@ def lookandsay(a):
 				break
 			c += 1
 		res.append((c, val))
-	r = list()
-	for i in res:
-		if i not in r:
-			r.append(i)
-	return r
+	
+	return res
 
 print(lookandsay([1, 1, 1]))
+print(lookandsay([3,3,8,-10,-10,-10]))
