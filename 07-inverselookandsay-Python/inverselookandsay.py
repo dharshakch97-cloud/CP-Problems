@@ -13,11 +13,10 @@ def inverselookandsay(a):
 	res = list()
 	for i in a:
 		s = i[0]
-		print(i[0])
 		while s != 0:
 			res.append(i[1])
-			print(i[1])
 			s -= 1
 	return res
 
 print(inverselookandsay([(3, 1)]))
+print(inverselookandsay([(1, -1), (1, 2), (1, 7)]))
