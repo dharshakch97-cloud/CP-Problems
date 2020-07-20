@@ -5,4 +5,16 @@
 
 def canqueenattack(qR, qC, oR, oC):
 	# Your code goes here
-	pass
+	if qR == oR:
+		return True
+	if qC == oC:
+		return True
+	if abs(qR - oR) == abs(qC - oC):
+		return True
+	return False
+	# if qR == oR or qC == oC or abs(qR - oR) == abs(qC == oC):
+	# 	return True
+	# return False
+print(canqueenattack(1, 1, 4, 6))
+print(canqueenattack(1, 1, 5, 7))
+print(canqueenattack(1, 2, 3, 4))
