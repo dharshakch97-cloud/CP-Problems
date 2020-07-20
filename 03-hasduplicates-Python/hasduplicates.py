@@ -5,4 +5,16 @@
 
 def hasduplicates(L):
 	# Your code goes here
-	pass
+	L_len = sum(len(row) for row in L)
+	s = set()
+	# print(L_len)
+	for i in L:
+		for j in i:
+			s.add(j)
+
+	if len(s) != L_len:
+		return True
+	return False
+
+print(hasduplicates([[2, 7, 9], [9, 5, 1], [4, 3, 8]]))
+print(hasduplicates([[2, 7, 6], [9, 5, 1], [4, 3, 8]]))
