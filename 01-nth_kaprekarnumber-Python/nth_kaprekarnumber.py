@@ -9,5 +9,40 @@
 
 import math
 
+def kaprekar(n):
+    if n == 1:
+        return 1
+    sq = n*n
+    count = 0
+    while sq != 0:
+        count += 1
+        sq //= 10
+    sq = n*n
+
+    for i in range(1, count):
+        div = int(math.pow(10, i))
+        if div == n:
+            continue
+        s = int(sq/div) + int(sq%div)
+        if s == n:
+            return True
+    return False
+
 def fun_nth_kaprekarnumber(n):
-    return 1;
+    c = 0
+    i = 9
+    if n == 0:
+        return 1
+    while True:
+        if kaprekar(i):
+            c += 1
+            if c == n:
+                return i
+        i += 1
+
+print(fun_nth_kaprekarnumber(0))
+print(fun_nth_kaprekarnumber(1))
+print(fun_nth_kaprekarnumber(5))
+print(fun_nth_kaprekarnumber(10))
+print(fun_nth_kaprekarnumber(15))
+print(fun_nth_kaprekarnumber(20))
