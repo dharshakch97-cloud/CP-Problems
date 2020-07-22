@@ -31,6 +31,36 @@ def kaprekar(n):
     return False
 
 def fun_nearestkaprekarnumber(n):
-    return kaprekar(45)
+    ls = list()
+    ls.append(n)
+    while True:
+        if kaprekar(n):
+            return n
+        if not kaprekar(n-1):
+            j = (n-1)-1
+            while True:
+                if kaprekar(j):
+                    ls.append(j)
+                    break
+                j -= 1
+        if not kaprekar(n+1):
+            i = (n+1)+1
+            while True:
+                if kaprekar(i):
+                    ls.append(i)
+                    break
+                i += 1
+        # print(ls)
+        a = ls[0] - ls[1]
+        b = ls[2] - ls[0]
+        if a <= b:
+            return ls[1]
+        return ls[2]
+    # return kaprekar(45)
 
 print(fun_nearestkaprekarnumber(49))
+print(fun_nearestkaprekarnumber(51))
+print(fun_nearestkaprekarnumber(50))
+print(fun_nearestkaprekarnumber(102))
+print(fun_nearestkaprekarnumber(765))
+print(fun_nearestkaprekarnumber(3861))
