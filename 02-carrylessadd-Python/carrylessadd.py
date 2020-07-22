@@ -6,5 +6,16 @@
 
 
 def fun_carrylessadd(x, y):
-	return 0
+	res = 0
+	mul = 1
+	while x > 0 or y > 0:
+		s = (x%10) + (y%10)
+		s = s%10
+		res = (s * mul) + res
+		x = x//10
+		y = y//10
+		mul = mul * 10 
+	return res
 
+print(fun_carrylessadd(18, 27))
+print(fun_carrylessadd(785, 376))
