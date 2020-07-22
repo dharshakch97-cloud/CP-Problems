@@ -11,6 +11,26 @@
 
 
 import math
+def kaprekar(n):
+    if n == 1:
+        return 1
+    sq = n*n
+    count = 0
+    while sq != 0:
+        count += 1
+        sq //= 10
+    
+    sq = n*n
+    for i in range(1, count):
+        div = int(math.pow(10, i))
+        if div == n:
+            continue
+        s = int(sq/div) + int(sq%div)
+        if s == n:
+            return True
+    return False
 
 def fun_nearestkaprekarnumber(n):
-    return 1
+    return kaprekar(45)
+
+print(fun_nearestkaprekarnumber(49))
