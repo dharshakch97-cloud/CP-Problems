@@ -49,13 +49,16 @@ def fun_nth_smithnumber(n):
     if n == 0:
         return 4
     count = 1
-    for i in range(5, 500):
+    # for i in range(5, 500):
+    i = 5
+    while True:
         f = factors(i)
         if len(f) > 1:
             if sumdigits(i) == addlist(f):
                 if count == n:
                     return i
                 count += 1
+        i += 1
     # return 1
 
 print(fun_nth_smithnumber(0))
