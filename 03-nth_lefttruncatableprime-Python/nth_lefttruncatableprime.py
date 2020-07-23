@@ -19,26 +19,27 @@ def lefttruncatebyone(n):
     if n < 10 and isprime(n):
         return True
     else:
+        count = 0
         s = str(n)
         while len(s) != 0:
             if isprime(int(s)):
                 s = s[1:]
-            else:
-                return False
-        return True
+            count += 1
+        if count == len(str(n)):
+            return True
+        return False
 
 def fun_nth_lefttruncatableprime(n):
     if n == 0:
-        return 2
-    c = 0                          #  3 -> 1, 5 -> 2, 7 -> 3, 13 -> 4, 17 
-    i = 3
-    while True:
-        if lefttruncatebyone(i):
-            c += 1
-            if c == n:
-                # print(i)
-                return i
-        i += 1
+        return 2                   #  3 -> 1, 5 -> 2, 7 -> 3, 13 -> 4, 17 
+    i = -1
+    j = 2
+    while i < n:
+        if lefttruncatebyone(j):
+            i += 1
+        j += 1
+    return j - 1
+
 # print(lefttruncatebyone(35))
 print(fun_nth_lefttruncatableprime(0))
 print(fun_nth_lefttruncatableprime(1))
