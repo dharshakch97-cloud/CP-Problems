@@ -9,6 +9,33 @@
 
 
 import math
+def isprime(n):
+    for i in range(2, n):
+        if n%i == 0:
+            return False
+    return True
+
+def lefttruncatebyone(n):
+    return str(n)[1:]
 
 def fun_nth_lefttruncatableprime(n):
-    return 1
+    if n == 0:
+        return 2
+    c = 0                          #  3 -> 1, 5 -> 2, 7 -> 3, 13 -> 4, 17 
+    i = 3
+    while True:
+        if isprime(i) and i < 10:
+            c += 1
+            if c == n:
+                return i
+        else:
+            while i > 0:
+                ln = int(lefttruncatebyone(i))
+                if isprime(ln):
+                    c += 1
+                    if c == n:
+                        return i
+        i += 1
+
+# print(lefttruncatebyone(317))
+print(fun_nth_lefttruncatableprime(5))
