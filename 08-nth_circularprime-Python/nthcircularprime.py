@@ -29,16 +29,16 @@ def isCircularprime(n):
 
 def nthcircularprime(n):
 	# Your code goes here
-	c = 1
+	c = 2
 	i = 3
 	if n == 1:
 		return 2
 	while True:
 		if isCircularprime(i):
-			c += 1
 			if c == n:
 				return i
 		i += 1
+		c += 1
 
 # isCircularprime(197)
 print(nthcircularprime(3))
