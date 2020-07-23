@@ -10,4 +10,15 @@
 
 
 def fun_nth_carolprime(n):
-    return 0
+    i = 2
+    count = 0
+    while True:
+        carol = ((2**i - 1)**2 - 2)
+        # print(carol)
+        if count == n:
+            return carol
+        count += 1
+        i += 1
+
+print(fun_nth_carolprime(0))
+print(fun_nth_carolprime(1))
