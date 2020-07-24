@@ -6,14 +6,19 @@
 # note that 197 is prime, as is 971 (rotated left), as is 719 (rotated left again).
 
 def isprime(n):
-	for i in range(2, n):
-		if n%i == 0:
-			return False
-	return True
+	if n > 1:
+		for i in range(2, n):
+			if n%i == 0:
+				return False
+		return True
 
 def isCircularprime(n):
 	i = 0
 	count = 0
+	if n < 10:
+		if isprime(n):
+			return True
+		return False
 	l = len(str(n))
 	while i < l:
 		r = n%10
@@ -41,4 +46,13 @@ def nthcircularprime(n):
 		c += 1
 
 # isCircularprime(197)
+print(nthcircularprime(1))
+print(nthcircularprime(2))
 print(nthcircularprime(3))
+print(nthcircularprime(4))
+print(nthcircularprime(5))
+print(nthcircularprime(6))
+print(nthcircularprime(7))
+print(nthcircularprime(8))
+print(nthcircularprime(9))
+print(nthcircularprime(10))
