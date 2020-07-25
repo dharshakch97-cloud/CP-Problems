@@ -23,6 +23,7 @@ def leastfrequentletters(s):
 	for i in lf.keys():
 		if lf[i] == 1:
 			r += str(i)
+	r = r.split().sort()
 	return r
 
 print(leastfrequentletters("aDq efQ? FB'daf!!!"))
