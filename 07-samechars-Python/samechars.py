@@ -7,6 +7,8 @@
 
 def samechars(s1, s2):
 	# Your code goes here
+	if type(s1) == int or type(s2) == int:
+		return False
 	set1 = set()
 	set2 = set()
 	for i in s1:
@@ -22,4 +24,6 @@ def samechars(s1, s2):
 
 print(samechars("abcabcabc", "cba"))
 print(samechars("abcabcabc", "cbad"))
+print(samechars("abcabcabc", "cBa"))
+print(samechars(42,"The other parameter is not a string"))
 print(samechars("", ""))
