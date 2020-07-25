@@ -4,4 +4,7 @@
 
 def getallpermutations(x):
 	# Your code goes here
-	pass
+	s = list(x)
+	print(s)
+
+getallpermutations("ABC")
