@@ -14,7 +14,10 @@ def samechars(s1, s2):
 	for j in s2:
 		set2.add(j)
 
-	print(set1)
-	print(set2)
+	if len(set1) == len(set2):
+		return True
+	return False
+	# print(set1)
+	# print(set2)
 
-samechars("abcabc", "abcd")
+print(samechars("abcabc", "abcd"))
