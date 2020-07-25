@@ -8,4 +8,4 @@ def getallpermutations(x):
 	# Your code goes here
 	return list(permutations(range(1, len(str(x)))))
 
-print(getallpermutations("ABC"))
+print(getallpermutations("abc"))
