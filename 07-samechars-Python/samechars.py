@@ -7,4 +7,14 @@
 
 def samechars(s1, s2):
 	# Your code goes here
-	pass
+	set1 = set()
+	set2 = set()
+	for i in s1:
+		set1.add(i)
+	for j in s2:
+		set2.add(j)
+
+	print(set1)
+	print(set2)
+
+samechars("abcabc", "abcd")
