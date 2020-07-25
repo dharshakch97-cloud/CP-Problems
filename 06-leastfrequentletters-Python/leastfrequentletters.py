@@ -23,7 +23,7 @@ def leastfrequentletters(s):
 	for i in lf.keys():
 		if lf[i] == 1:
 			r += str(i)
-	r.split().sort()
+	list(r.split()).sort()
 	print(r)
 	return r
 
