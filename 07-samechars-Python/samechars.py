@@ -21,3 +21,4 @@ def samechars(s1, s2):
 	# print(set2)
 
 print(samechars("abcabc", "abcd"))
+print(samechars("abcabc", "abc"))
