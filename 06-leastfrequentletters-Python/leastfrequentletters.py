@@ -11,11 +11,13 @@ def leastfrequentletters(s):
 	# Your code goes here
 	s = s.lower()
 	lf = dict()
-	# for i in s:
-	# 	ch = ord(i)
-	# 	if 97 < ch < 122 or 65 < ch < 90:
-	# 		if i not in lf:
-
-	print(s)
+	for i in s:
+		ch = ord(i)
+		if ch > 97 and ch < 122:
+			if i not in lf:
+				lf[i] = 1
+			else:
+				lf[i] += 1
+	print(lf)
 
 leastfrequentletters("aDq efQ? FB'daf!!!")
