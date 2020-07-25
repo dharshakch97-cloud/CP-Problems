@@ -15,10 +15,10 @@ def getpermutation(s):
 		for q in getpermutation(rem):
 			l.append([p] + q)
 	return l
-	
+
 def getallpermutations(x):
 	# Your code goes here
 	s = list(x)
 	return 
 
-getallpermutations("ABC")
+print(getallpermutations("ABC"))
