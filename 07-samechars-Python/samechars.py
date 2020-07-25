@@ -22,3 +22,4 @@ def samechars(s1, s2):
 
 print(samechars("abcabcabc", "cba"))
 print(samechars("abcabcabc", "cbad"))
+print(samechars("", ""))
