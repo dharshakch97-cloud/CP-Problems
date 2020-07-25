@@ -3,11 +3,6 @@
 # your program should print all 6 permutations e.g. [('a', 'b', 'c'), ('a', 'c', 'b'), ('b', 'a', 'c'), ('b', 'c', 'a'), ('c', 'a', 'b'), ('c', 'b', 'a')]
 
 def getpermutation(s):
-	if len(s) == 0:
-		return []
-	if len(s) == 1:
-		return [s]
-	
 	l = []
 	for i in range(len(s)):
 		p = s[i]
