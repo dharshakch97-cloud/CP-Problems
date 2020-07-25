@@ -29,3 +29,4 @@ def longestcommonsubstring(s1, s2):
 
 print(longestcommonsubstring("abcABC", "zzabZZAB"))
 print(longestcommonsubstring("abcdef", "ghi"))
+print(longestcommonsubstring("abcdef", "abqrcdest"))
