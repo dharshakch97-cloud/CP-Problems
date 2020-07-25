@@ -9,11 +9,11 @@ def getpermutation(s):
 		rem = s[:i] + s[i+1:]
 		for q in getpermutation(rem):
 			l.append([p] + q)
-	print(l)
+	return l
 
 def getallpermutations(x):
 	# Your code goes here
 	s = list(x)
-	return 
+	return getpermutation(s)
 
 print(getallpermutations("ABC"))
