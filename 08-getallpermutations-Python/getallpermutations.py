@@ -14,6 +14,7 @@ def getpermutation(s):
 def getallpermutations(x):
 	# Your code goes here
 	s = list(x)
+	print(s)
 	return getpermutation(s)
 
 print(getallpermutations("ABC"))
