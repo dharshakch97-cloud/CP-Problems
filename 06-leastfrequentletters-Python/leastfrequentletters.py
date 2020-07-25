@@ -18,6 +18,10 @@ def leastfrequentletters(s):
 				lf[i] = 1
 			else:
 				lf[i] += 1
-	print(lf)
+	r = ""
+	for i in lf.keys():
+		if lf[i] == 1:
+			r += str(i)
+	return r
 
 leastfrequentletters("aDq efQ? FB'daf!!!")
