@@ -9,4 +9,22 @@
 
 def longestcommonsubstring(s1, s2):
     # Yourcode goes here
-    pass
+    m = len(s1)
+    n = len(s2)
+    maxlen = 0
+    end = m
+
+    l = [[0 for i in range(n+1)] for j in range(m+1)]
+    for i in range(1, m+1):
+        for j in range(1, n+1):
+            if s1[i-1] == s2[j-1]:
+                l[i][j] = l[i-1][j-1] + 1
+
+                if l[i][j] > maxlen:
+                    maxlen = l[i][j]
+                    end = i
+
+    return s1[end - maxlen: end]
+
+
+print(longestcommonsubstring("abcABC", "zzabZZAB"))
