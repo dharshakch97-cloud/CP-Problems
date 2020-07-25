@@ -6,6 +6,7 @@ from itertools import permutations
 
 def getallpermutations(x):
 	# Your code goes here
-	return list(permutations(x))
+	return list(permutations(x, len(x)))
 
 print(getallpermutations("abc"))
+print(getallpermutations("xyzab"))
