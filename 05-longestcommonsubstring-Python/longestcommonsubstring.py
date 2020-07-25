@@ -23,7 +23,8 @@ def longestcommonsubstring(s1, s2):
                 if l[i][j] > maxlen:
                     maxlen = l[i][j]
                     end = i
-
+    print(maxlen)
+    print(end)
     return s1[end - maxlen: end]
 
 
