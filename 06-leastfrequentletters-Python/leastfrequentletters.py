@@ -9,4 +9,8 @@
 
 def leastfrequentletters(s):
 	# Your code goes here
-	pass
+	lf = dict()
+	for i in s:
+		print(ord(i))
+
+leastfrequentletters("aDq efQ? FB'daf!!!")
