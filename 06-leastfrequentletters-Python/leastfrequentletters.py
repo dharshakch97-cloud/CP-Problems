@@ -26,3 +26,4 @@ def leastfrequentletters(s):
 
 print(leastfrequentletters("aDq efQ? FB'daf!!!"))
 print(leastfrequentletters("?'!!"))
+print(leastfrequentletters("abc def! GFE'cag!!!"))
