@@ -49,7 +49,7 @@ class Graph(object):
     
     
     def get_adjacency_matrix(self):
-        adjacency_matrix = [[0 for i in range(max_index + 1)] for j in range(max_index + 1)]
+        adjacency_matrix = [[0 for i in range(len(self.edges) + 1)] for j in range(len(self.edges) + 1)]
         for i in self.edges:
             adjacency_matrix[i.node_from.value][i.node_to.value] = i.value
         return adjacency_matrix
@@ -62,3 +62,4 @@ graph.insert_edge(102, 1, 4)
 graph.insert_edge(103, 3, 4)
 
 print(graph.get_edge_list())
+print(graph.get_adjacency_matrix())
