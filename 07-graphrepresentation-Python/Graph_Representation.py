@@ -38,7 +38,10 @@ class Graph(object):
         self.edges.append(new_edge)
 
     def get_edge_list(self):
-        return self.edges
+        edg = list()
+        for i in self.edges:
+            edg.append((i.value, i.node_from.value, i.node_to.value))
+        return edg
 
     def get_adjacency_list(self):
         adjacency_list = [None] * (max_index + 1)
@@ -47,6 +50,8 @@ class Graph(object):
     
     def get_adjacency_matrix(self):
         adjacency_matrix = [[0 for i in range(max_index + 1)] for j in range(max_index + 1)]
+        for i in self.edges:
+            adjacency_matrix[i.node_from.value][i.node_to.value] = i.value
         return adjacency_matrix
 
 
