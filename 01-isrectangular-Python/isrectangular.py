@@ -11,4 +11,4 @@ def fun_isrectangular(l):
 	return True
 
 
-
+print(fun_isrectangular([[1, 2, 3], [1, 1]]))
