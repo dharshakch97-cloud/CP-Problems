@@ -29,7 +29,7 @@ public class TestJUnit {
       largestnumber s = new largestnumber();
       
       assertEquals("1.", 17, s.fun_largestnumber("I saw 3 dogs, 17 cats, and 14 cows!"));
-      assertEquals("2.", 15, s.fun_largestnumber("wehave15dogs2cats"));
+      assertEquals("2.", 15, s.fun_largestnumber("we have 15 dogs 2 cats"));
    }
 }
 

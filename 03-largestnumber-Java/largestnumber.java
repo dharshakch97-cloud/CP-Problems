@@ -10,7 +10,24 @@
 
 class largestnumber {
 	public int fun_largestnumber(String s){
-		return 17;	
+		String[] str = s.split(" ");
+		int l = 0;
+		for (int i = 0; i < str.length; i++) {
+			try {
+				int num = Integer.parseInt(str[i]);
+				if (num > l)
+					l = num;
+			}	
+			catch (Exception e) {
+				continue;
+			}
+		}
+		return l;
+	}
+
+	public static void main(String[] args) {
+		largestnumber l = new largestnumber();
+		System.out.println(l.fun_largestnumber("wehave15dogs2cats"));
 	}
 }
 	
