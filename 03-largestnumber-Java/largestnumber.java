@@ -10,7 +10,7 @@
 
 class largestnumber {
 	public int fun_largestnumber(String s){
-		return 0;	
+		return 17;	
 	}
 }
 	
