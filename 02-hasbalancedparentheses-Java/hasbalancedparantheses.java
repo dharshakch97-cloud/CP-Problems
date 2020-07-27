@@ -10,7 +10,19 @@
  
 class hasbalancedparantheses {
 	public boolean fun_hasbalancedparantheses(String s){
-		return false;	
+		int parantheses = 0;
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) == '(')
+				parantheses++;
+			else if (s.charAt(i) == ')')
+				parantheses--;
+			else
+				continue;
+		}
+		if (parantheses == 0)
+			return true;
+		else 
+			return false;	
 	}
 }
 	
